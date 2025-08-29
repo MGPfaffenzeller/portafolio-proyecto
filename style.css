@@ -1,0 +1,174 @@
+/* Estilo General */
+body {
+  font-family:"Libertinus Serif", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  color: #333;
+}
+
+/* Header y nav */
+header {
+  background-color: #cbeaff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Main */
+main section {
+  padding: 2rem;
+  text-align: center;
+}
+
+main section img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+main section h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+main section h2 {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+main a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #ff7cae;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main a:hover {
+  background-color: #ff5b97;
+}
+
+/* Secciones */
+section {
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+/* Articulos */
+article {
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #f3f8ff;
+}
+
+article img, article iframe {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Lista de habilidades */
+ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  background-color: #e2e2ff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+/* Formulario */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+button {
+  background-color: #7a9eff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a7fd6;
+}
+
+/* Footer */
+footer {
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.redes-sociales a {
+  margin: 0 10px;
+  color: #555;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+  color: #ff7cae;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section {
+    padding: 1rem;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
