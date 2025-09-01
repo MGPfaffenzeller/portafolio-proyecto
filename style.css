@@ -39,60 +39,6 @@ h1, h2, h3, h4{
   color: #ffd700 !important;
 }
 
-/* hero | inicio*/
-.hero {
-  min-height: 90vh;
-  background: linear-gradient(120deg, #ffb6c1, #ff4da6, #6a5acd);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 2rem;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/*secciones generales*/
-.section {
-  padding: 80px 20px;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #6a5acd;
-}
-
-/* sobre mi */
-.sobre-mi {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}
-
-.sobre-mi img {
-  max-width: 250px;
-  border-radius: 50%;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-}
-
-.sobre-mi p {
-  flex: 1;
-  font-size: 1.1rem;
-}
-
 /* Secciones */
 section {
   margin: 2rem auto;
@@ -155,6 +101,26 @@ footer a:hover {
 }
 
 /* Ajustes responsive para todas las páginas */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
 /* Tablets */
 @media (max-width: 992px) {
   section {
