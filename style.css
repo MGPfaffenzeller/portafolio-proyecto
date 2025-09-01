@@ -154,19 +154,58 @@ footer a:hover {
   transition: color 0.3s;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
+/* Ajustes responsive para todas las páginas */
+/* Tablets */
+@media (max-width: 992px) {
+  section {
+    padding: 60px 20px;
+  }
+  .card {
+    margin-bottom: 1.5rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  section {
+    padding: 40px 15px;
   }
 
-  main section {
-    padding: 1rem;
+  /* Ajustes generales */
+  h1, h2 {
+    font-size: 1.5rem;
   }
 
-  img {
-    width: 100px;
-    height: 100px;
+  /* Sobre mí */
+  .text-center img,
+  .sobre-mi img {
+    max-width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  /* Habilidades lista */
+  .card ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  .card ul h4 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  /* Formulario */
+  form {
+    padding: 1.5rem;
+  }
+  form input, form textarea {
+    font-size: 0.9rem;
+  }
+  form button {
+    width: 100%;
   }
 }
